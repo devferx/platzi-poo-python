@@ -16,7 +16,7 @@ class CasillaDeVotacion:
             raise ValueError(f'La region {region} no esta en la lista')
 
 
-casilla = CasillaDeVotacion(123,['Mexico','Morelos'])
+casilla = CasillaDeVotacion(123, ['Mexico', 'Morelos'])
 print(casilla.region)
 casilla.region = 'Mexico'
 print(casilla.region)

@@ -1,26 +1,27 @@
 class Employee:
-	def __init__(self, first, last):
-		self.first = first
-		self.last = last
+    def __init__(self, first, last):
+        self.first = first
+        self.last = last
 
-	@property
-	def email(self):
-		return f'{self.first}{self.last}@email.com'
+    @property
+    def email(self):
+        return f'{self.first}{self.last}@email.com'
 
-	@property
-	def fullname(self):
-		return f'{self.first} {self.last}'
+    @property
+    def fullname(self):
+        return f'{self.first} {self.last}'
 
-	@property.setter
-	def fullname(self, name):
-		first, last = name.split(" ")
-		self.first = first
-		self.last = last
+    @property.setter
+    def fullname(self, name):
+        first, last = name.split(" ")
+        self.first = first
+        self.last = last
 
-	@property.deleter
-	def fullname(self):
-		self.first = None
-		self.last = None
+    @property.deleter
+    def fullname(self):
+        self.first = None
+        self.last = None
+
 
 emp_1 = Employee('Jhonn', 'Smith')
 
